@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Қант диабетінің көзге әсері · және одан туындайтын көз аурулары</title>
+  <meta name="description" content="Қант диабеті көздің әртүрлі құрылымдарына әсер етеді: диабеттік ретинопатия, катаракта, глаукома, диабеттік макулопатия. Бүйрек ауруларындағы көз өзгерістерін ЖИ негізінде визуалды талдау.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='90'%3E%F0%9F%91%81%EF%B8%8F%3C/text%3E%3C/svg%3E">
+  <link rel="preload" as="image" href="assets/bg.jpeg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ ЖОҒАРҒЫ ЖОЛ АҚ ============ -->
+<header class="topbar" id="topbar">
+  <div class="topbar-inner">
+    <a href="#basti" class="brand">
+      <svg class="brand-eye" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M2 12s3.6-6 10-6 10 6 10 6-3.6 6-10 6S2 12 2 12z" stroke="currentColor" stroke-width="2"/>
+        <circle cx="12" cy="12" r="3.2" stroke="currentColor" stroke-width="2"/>
+      </svg>
+      <span>DIABETES <b>&amp;</b> VISION</span>
+    </a>
+    <button id="navToggle" class="nav-toggle" aria-label="Мәзірді ашу" aria-expanded="false">☰</button>
+  </div>
+</header>
+
+<!-- Толық экрандық мәзір (topbar-дан тыс — fixed орындалуы түзу жұмыс істеуі үшін) -->
+<nav id="navMenu" class="menu-overlay" aria-label="Навигация">
+      <p class="menu-title">🧭 Навигация</p>
+      <a href="#basti">Басты бет</a>
+      <a href="#kirispe">Кіріспе</a>
+      <a href="#aurular">Көз аурулары</a>
+      <a href="#neiro">Нейрофизиология</a>
+      <a href="#buyrek">Бүйрек және көз</a>
+      <a href="#zhy">ЖИ-талдау</a>
+      <a href="#qorytyndy">Қорытынды</a>
+      <a href="doctors_help.html">Дәрігерге дейінгі көмек</a>
+      <button class="btn btn-cta menu-chat" data-open-chat>💬 ЖИ-чатқа жазу</button>
+</nav>
+
+<main class="page">
+
+  <!-- ============ HERO (референс бойынша) ============ -->
+  <section class="hero" id="basti">
+    <div class="hero-label">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M2 12s3.6-6 10-6 10 6 10 6-3.6 6-10 6S2 12 2 12z" stroke="currentColor" stroke-width="2"/>
+        <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2"/>
+      </svg>
+      <span>DIABETES &amp; VISION</span>
+      <svg class="ecg" viewBox="0 0 120 24" fill="none" aria-hidden="true">
+        <polyline points="0,12 28,12 34,4 40,20 46,9 52,12 120,12" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+      </svg>
+    </div>
+
+    <h1>Қант диабетінің <span class="accent">көзге әсері</span></h1>
+    <p class="hero-sub">және одан туындайтын көз аурулары</p>
+
+    <p class="hero-quote">Қант диабеті көздің әртүрлі құрылымдарына әсер етіп, көру қабілетінің бұзылуына және ауыр асқынуларға әкелуі мүмкін.</p>
+
+    <div class="hero-diseases">
+      <a class="dis" href="#aurular" data-open-disease="ret">
+        <img class="dis-photo" src="assets/retinopatiya.jpg" alt="Диабеттік ретинопатия" loading="lazy">
+        <small>Диабеттік ретинопатия</small>
+      </a>
+      <a class="dis" href="#aurular" data-open-disease="kat">
+        <img class="dis-photo" src="assets/katarakta.jpg" alt="Катаракта" loading="lazy">
+        <small>Катаракта</small>
+      </a>
+      <a class="dis" href="#aurular" data-open-disease="gla">
+        <img class="dis-photo" src="assets/glaukoma.jpg" alt="Глаукома" loading="lazy">
+        <small>Глаукома</small>
+      </a>
+      <a class="dis" href="#aurular" data-open-disease="mak">
+        <img class="dis-photo" src="assets/makulopatiya.jpg" alt="Диабеттік макулопатия" loading="lazy">
+        <small>Диабеттік макулопатия</small>
+      </a>
+    </div>
+
+    <a href="#kirispe" class="btn btn-cta">Зерттеуді бастау <span class="arrow">→</span></a>
+  </section>
+
+  <!-- ============ КІРІСПЕ ============ -->
+  <section class="section" id="kirispe">
+    <p class="overline">01 · Кіріспе</p>
+    <h2>Көз — қант диабетінің алғашқы «мақсаты»</h2>
+    <div class="panel">
+      <p>Жоғары қандағы қант (гипергликемия) көздің жіңішке тамырлары мен жүйке жасушаларын ұзақ уақыт бойы біртіндеп зақымдайды. Ең қауіптісі — <b>торлы қабық (ретина)</b>: оның өзгерістері алдымен нейрофизиологиялық деңгейде басталады, содан кейін ғана көзге көрінетін белгілер пайда болады.</p>
+      <p>Сол себептен әлемде <b>диабеттік ретинопатия</b> еңбекке жарамды жастағы адамдар арасында соқырлықтың негізгі себебі саналады.</p>
+    </div>
+    <div class="stats">
+      <div class="stat"><b>537 млн+</b><span>әлемде қант диабетімен өмір сүреді (IDF, 2021)</span></div>
+      <div class="stat"><b>~⅓</b><span>науқастарда көз патологиясы белгілері байқалады</span></div>
+      <div class="stat"><b>№ 1</b><span>жастар мен орта жастағылар арасындағы соқырлық себебі</span></div>
+    </div>
+  </section>
+
+  <!-- ============ КӨЗ АУРУЛАРЫ (reference2 бойынша) ============ -->
+  <section class="section" id="aurular">
+    <div class="dis-head">
+      <svg class="meter-ic" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <rect x="5" y="2.5" width="14" height="16.5" rx="3.5" stroke="currentColor" stroke-width="1.8"/>
+        <path d="M12 6.2c1.8 2.2 2.8 3.5 2.8 4.9a2.8 2.8 0 1 1-5.6 0c0-1.4 1-2.7 2.8-4.9z" fill="currentColor"/>
+        <path d="M8.6 21.7h6.8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+      </svg>
+      <div>
+        <h2>Қант диабетімен байланысты<br><span class="accent">6 негізгі көз ауруы</span></h2>
+        <span class="brush" aria-hidden="true"></span>
+      </div>
+    </div>
+    <p class="dis-hint">👆 Карточканы басып толық мәліметті ашыңыз</p>
+
+    <!-- 01 -->
+    <article class="dcard" id="dis-ret">
+      <button class="dcard-btn" type="button" aria-expanded="false" aria-controls="dis-body-ret">
+        <span class="dph"><img src="assets/retinopatiya.jpg" alt="Диабеттік ретинопатия — көз түбі" loading="lazy"></span>
+        <span class="dside">
+          <span class="numb">01</span>
+          <span class="dtitle">Диабеттік ретинопатия</span>
+        </span>
+        <span class="chev" aria-hidden="true">▾</span>
+      </button>
+      <div class="dcard-body" id="dis-body-ret" hidden>
+        <p><b>Диабеттік ретинопатия</b> — көздің торлы қабығындағы қан тамырларының зақымдануы.</p>
+        <a class="dmore" href="retinopatiya.html">Толық бетіне өту →</a>
+      </div>
+    </article>
+
+    <!-- 02 -->
+    <article class="dcard" id="dis-kat">
+      <button class="dcard-btn" type="button" aria-expanded="false" aria-controls="dis-body-kat">
+        <span class="dph"><img src="assets/katarakta.jpg" alt="Катаракта" loading="lazy"></span>
+        <span class="dside">
+          <span class="numb">02</span>
+          <span class="dtitle">Катаракта</span>
+        </span>
+        <span class="chev" aria-hidden="true">▾</span>
+      </button>
+      <div class="dcard-body" id="dis-body-kat" hidden>
+        <p><b>Катаракта</b> — көз бұршағының бұлыңғырлануы, көру қабілетінің төмендеуі.</p>
+        <a class="dmore" href="katarakta.html">Толық бетіне өту →</a>
+      </div>
+    </article>
+
+    <!-- 03 -->
+    <article class="dcard" id="dis-gla">
+      <button class="dcard-btn" type="button" aria-expanded="false" aria-controls="dis-body-gla">
+        <span class="dph"><img src="assets/glaukoma.jpg" alt="Глаукома" loading="lazy"></span>
+        <span class="dside">
+          <span class="numb">03</span>
+          <span class="dtitle">Глаукома</span>
+        </span>
+        <span class="chev" aria-hidden="true">▾</span>
+      </button>
+      <div class="dcard-body" id="dis-body-gla" hidden>
+        <p><b>Глаукома</b> — көру жүйкесінің зақымдануы, көбіне көз ішілік қысымның жоғарылауымен байланысты.</p>
+        <a class="dmore" href="glaukoma.html">Толық бетіне өту →</a>
+      </div>
+    </article>
+
+    <!-- 04 -->
+    <article class="dcard" id="dis-mak">
+      <button class="dcard-btn" type="button" aria-expanded="false" aria-controls="dis-body-mak">
+        <span class="dph"><img src="assets/makulopatiya.jpg" alt="Диабеттік макулопатия" loading="lazy"></span>
+        <span class="dside">
+          <span class="numb">04</span>
+          <span class="dtitle">Диабеттік макулопатия</span>
+        </span>
+        <span class="chev" aria-hidden="true">▾</span>
+      </button>
+      <div class="dcard-body" id="dis-body-mak" hidden>
+        <p><b>Диабеттік макулопатия</b> — торлы қабықтың орталық бөлігі — макуланың зақымдануы.</p>
+        <a class="dmore" href="makulopatiya.html">Толық бетіне өту →</a>
+      </div>
+    </article>
+
+    <!-- 05 -->
+    <article class="dcard" id="dis-gem">
+      <button class="dcard-btn" type="button" aria-expanded="false" aria-controls="dis-body-gem">
+        <span class="dph"><img src="assets/gemoftalm.jpg" alt="Шыны тәрізді денеге қан құйылу (гемофтальм)" loading="lazy"></span>
+        <span class="dside">
+          <span class="numb">05</span>
+          <span class="dtitle">Шыны тәрізді денеге қан құйылу</span>
+        </span>
+        <span class="chev" aria-hidden="true">▾</span>
+      </button>
+      <div class="dcard-body" id="dis-body-gem" hidden>
+        <p><b>Шыны тәрізді денеге қан құйылу</b> (гемофтальм) — зақымданған қан тамырларынан көздің шыны тәрізді денесіне қан кетуі.</p>
+        <a class="dmore" href="gemoftalm.html">Толық бетіне өту →</a>
+      </div>
+    </article>
+
+    <!-- 06 -->
+    <article class="dcard" id="dis-tra">
+      <button class="dcard-btn" type="button" aria-expanded="false" aria-controls="dis-body-tra">
+        <span class="dph"><img src="assets/traksiyalyk.jpg" alt="Тракциялық торлы қабық ажырауы" loading="lazy"></span>
+        <span class="dside">
+          <span class="numb">06</span>
+          <span class="dtitle">Тракциялық торлы қабық ажырауы</span>
+        </span>
+        <span class="chev" aria-hidden="true">▾</span>
+      </button>
+      <div class="dcard-body" id="dis-body-tra" hidden>
+        <p><b>Тракциялық торлы қабық ажырауы</b> (тракциялық отслойка сетчатки) — диабеттік ретинопатияның асқынуы нәтижесінде торлы қабықтың өз орнынан тартылып ажырауы.</p>
+        <a class="dmore" href="traksiyalyk.html">Толық бетіне өту →</a>
+      </div>
+    </article>
+
+    <div class="dis-deco" aria-hidden="true">
+      <svg viewBox="0 0 220 24" fill="none">
+        <polyline points="0,12 34,12 40,5 46,19 52,9 58,12 86,12" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M86 12c6.5-7.5 14.5-11 24-11s17.5 3.5 24 11c-6.5 7.5-14.5 11-24 11s-17.5-3.5-24-11z" stroke="currentColor" stroke-width="2.2"/>
+        <circle cx="110" cy="12" r="4.6" fill="currentColor"/>
+        <polyline points="134,12 162,12 168,5 174,19 180,9 186,12 220,12" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ============ НЕЙРОФИЗИОЛОГИЯ ============ -->
+  <section class="section" id="neiro">
+    <p class="overline">03 · Негіздер</p>
+    <h2>Торлы қабықтың нейрофизиологиясы</h2>
+    <div class="panel"><p class="section-lead">Ретина — мидың шығып тұрған бөлігі іспеттес жүйке тіні. Диабет оның қызметін жасуша деңгейінде бұзады:</p></div>
+    <div class="panel">
+      <h4>👁️ Фоторецепторлар</h4>
+      <p><b>Таяқшалар (rods)</b> — қараңғыға бейімделу, <b>колбалар (cones)</b> — түс пен өткір көру. Гипоксия олардың метаболизмін алғаш бұзады.</p>
+    </div>
+    <div class="panel">
+      <h4>🧠 Ганглиозды жасушалар</h4>
+      <p>Нейродегенерацияға ең сезімтал буын: нерв талшықтары қабаты (RNFL) жұқарады, жасушалар апоптозға ұшырайды.</p>
+    </div>
+    <div class="panel">
+      <h4>⚡ Электроретинография (ЭРГ)</h4>
+      <p><b>a-толқын</b> — фоторецепторлар, <b>b-толқын</b> — ішкі қабат жасушалары. <b>Осцилляторлық потенциалдардың</b> төмендеуі — ерте белгі: тамырлар көрінбей тұрып-ақ электр жауабы өзгереді.</p>
+    </div>
+    <div class="panel">
+      <h4>🩸 Қан-торлы тосқауыл</h4>
+      <p>Эндотелий мен пигмент эпителийінің тығыз байланысы. Гипергликемия оның өткізгіштігін арттырып, макулярлық ісінуге және қатты экссудаттарға алып келеді.</p>
+    </div>
+  </section>
+
+  <!-- ============ БҮЙРЕК ЖӘНЕ КӨЗ ============ -->
+  <section class="section" id="buyrek">
+    <p class="overline">04 · Қатарлас байланыс</p>
+    <h2>Бүйрек аурулары және көз</h2>
+    <div class="panel">
+      <h4>🔗 «Бүйрек—көз» осі</h4>
+      <p>Екі мүше де микроциркуляцияға тәуелді: гипергликемия мен гипертензия оларды бірдей зақымдайды. Бірінің ауырлығы екіншісінің болжамы болады.</p>
+    </div>
+    <div class="panel">
+      <h4>🧪 Диабеттік нефропатия</h4>
+      <p>Альбуминурия мен eGFR төмендеуі. Ауыр ретинопатия — бүйрек зақымдануының тәуелсіз болжам көрсеткіші (предикторы).</p>
+    </div>
+    <div class="panel">
+      <h4>💧 СБА (CKD) мен уремия</h4>
+      <p>Токсиндер, қысым және ісіну көз түбінде гипертензиялық және уремиялық ретинопатияға ұқсас өзгерістер тудырады; гемодиализ кезінде көру ауытқуы мүмкін.</p>
+    </div>
+  </section>
+
+  <!-- ============ ЖИ-ТАЛДАУ ============ -->
+  <section class="section" id="zhy">
+    <p class="overline">05 · Жасанды интеллект</p>
+    <h2>Көз өзгерістерін ЖИ негізінде визуалды талдау</h2>
+    <div class="panel"><p class="section-lead">Көз түбінің (фундус) қарапайым фотосуретін модель бір мезетте талдап, патологияның ықтималдығын санмен көрсетеді:</p></div>
+
+    <ol class="steps">
+      <li class="step"><span class="num">1</span><div><h4>Деректер жинау</h4><p>Фундус фотосуреттері, OCT, eGFR және HbA1c көрсеткіштері.</p></div></li>
+      <li class="step"><span class="num">2</span><div><h4>Алдын ала өңдеу</h4><p>Сурет сапасын бақылау, қалыпқа келтіру, augmentation.</p></div></li>
+      <li class="step"><span class="num">3</span><div><h4>Оқыту (CNN)</h4><p>ResNet, Inception, EfficientNet — жіктеу; UNet — сегментация; трансфер-оқыту.</p></div></li>
+      <li class="step"><span class="num">4</span><div><h4>Жіктеу және болжам</h4><p>Ретинопатия кезеңі, макулярлық ісіну; зерттеулерде — фундус суретінен бүйрек қызметін болжау.</p></div></li>
+      <li class="step"><span class="num">5</span><div><h4>Түсіндіру</h4><p>Grad-CAM жылу карталары «не көргенін» көрсетеді; соңғы шешім — дәрігерге тиесілі.</p></div></li>
+    </ol>
+
+    <div class="panel">
+      <h4>Деректер жиындары мен метрикалар</h4>
+      <p>EyePACS, APTOS 2019, Messidor-2, IDRiD базаларында оқытылған модельдер ажыратуда жиі <b>AUC &gt; 0.90</b> көрсетеді.</p>
+    </div>
+  </section>
+
+  <!-- ============ ҚОРЫТЫНДЫ ============ -->
+  <section class="section" id="qorytyndy">
+    <p class="overline">06 · Қорытынды</p>
+    <h2>Басты тұжырымдар</h2>
+    <ul class="conclusions">
+      <li><b>Электрлік жауап — алғашқы сигнал:</b> ЭРГ пен OCT өзгерістері көзге көрінетін тамырлық белгілерден бұрын анықталады.</li>
+      <li><b>Көз — жалпы денсаулықтың «терезесі»:</b> ретина тамырлары бүйрек микроциркуляциясымен байланысты.</li>
+      <li><b>ЖИ — дәрігердің көмекшісі:</b> фундус суретін жылдам талдап, ерте скринингке қолжетімділік береді.</li>
+      <li><b>Профилактика — бәрінен бұрын:</b> гликемияны бақылау, қысым мен липидтерді қалыпта ұстау, жылына бір рет көз дәрігерін тексеру.</li>
+    </ul>
+    <div class="cta-box">
+      <p>Нақтырақ білгіңіз келе ме? Жобаның ЖИ-көмекшісі сұрақтарыңызға жауап береді.</p>
+      <button class="btn btn-cta" data-open-chat>💬 ЖИ-көмекшімен сөйлесу</button>
+    </div>
+  </section>
+
+  <!-- ============ АЯҚҚЫ НАВИГАЦИЯ ============ -->
+  <footer class="footer">
+    <nav class="footer-nav" aria-label="Сайттың соңғы навигациясы">
+      <h5>🧭 Навигация</h5>
+      <ul>
+        <li><a href="#basti">Басты бет</a></li>
+        <li><a href="#kirispe">Кіріспе</a></li>
+        <li><a href="#aurular">Көз аурулары</a></li>
+        <li><a href="#neiro">Нейрофизиология</a></li>
+        <li><a href="#buyrek">Бүйрек және көз</a></li>
+        <li><a href="#zhy">ЖИ-талдау</a></li>
+        <li><a href="#qorytyndy">Қорытынды</a></li>
+        <li><a href="doctors_help.html">Дәрігерге дейінгі көмек</a></li>
+        <li><a href="#basti" class="to-top">⬆ Жоғары қайту</a></li>
+      </ul>
+    </nav>
+    <div class="footer-col">
+      <h5>📚 Дереккөздер</h5>
+      <ul>
+        <li><a href="https://www.who.int/health-topics/diabetes" target="_blank" rel="noopener">WHO — Diabetes</a></li>
+        <li><a href="https://diabetesatlas.org/" target="_blank" rel="noopener">IDF Diabetes Atlas</a></li>
+        <li><a href="https://diabetesjournals.org/care" target="_blank" rel="noopener">ADA — Standards of Care</a></li>
+        <li><a href="https://www.kaggle.com/c/aptos2019-blindness-detection" target="_blank" rel="noopener">APTOS 2019 (Kaggle)</a></li>
+        <li><a href="https://idrid.grand-challenge.org/" target="_blank" rel="noopener">IDRiD датасеті</a></li>
+      </ul>
+    </div>
+    <p class="footer-note">Сайт білім беру мақсатында жасалды және <b>медициналық кеңес болып табылмайды</b>. Диагноз бен емдеу — дәрігерге хабарласыңыз. ЖИ-көмекші Google <b>Gemini API</b> арқылы жұмыс істейді және тек зерттеу тақырыбы бойынша жауап береді.</p>
+    <div class="footer-bottom">
+      <span>👁️ DIABETES &amp; VISION</span>
+      <span>© <span id="year">2026</span></span>
+    </div>
+  </footer>
+</main>
+
+<!-- ============ ЖИ-ЧАТ ВИДЖЕТІ ============ -->
+<button id="chatToggle" class="chat-toggle" aria-label="ЖИ-чатты ашу">
+  <span class="chat-toggle-icon">💬</span>
+  <span class="chat-toggle-label">ЖИ-көмекші</span>
+</button>
+
+<aside id="chatPanel" class="chat-panel" hidden aria-label="ЖИ-чат терезесі">
+  <header class="chat-head">
+    <div class="chat-head-info">
+      <strong>🤖 ЖИ-көмекші</strong>
+      <span>тек зерттеу тақырыбы бойынша</span>
+    </div>
+    <button id="chatClose" class="chat-close" aria-label="Чатты жабу">✕</button>
+  </header>
+
+  <div class="chat-notice">🔒 Мен тек <b>қант диабеті, көз аурулары, бүйрек және ЖИ-талдау</b> туралы сұрақтарға жауап беремін. Дәрігер емеспін 🙂</div>
+
+  <div id="chatMessages" class="chat-messages">
+    <div class="msg model"><div class="bubble">Сәлеметсіз бе! 👋 Мен — жобаның ЖИ-көмекшісім. Қант диабетінің көзге әсері, көз аурулары және ЖИ-визуалды талдау бойынша сұрақ қойып көріңіз 👇</div></div>
+  </div>
+
+  <div class="chat-chips">
+    <button class="chip" data-q="Диабеттік ретинопатия дегеніміз не?">👁️ Ретинопатия — деген не?</button>
+    <button class="chip" data-q="Қант диабетінде ЭРГ көрсеткіштері қалай өзгереді?">⚡ ЭРГ өзгерістері</button>
+    <button class="chip" data-q="ЖИ көз түбінің фотосуретін қалай талдайды?">🤖 ЖИ-талдау қалай жұмыс істейді?</button>
+    <button class="chip" data-q="Бүйрек аурулары көзге қалай әсер етеді?">🩺 Бүйрек және көз</button>
+    <button class="chip chip-off" data-q="Маған бір анекдот айтып берші 😄">🚫 Сынақ: басқа тақырып</button>
+  </div>
+
+  <form id="chatForm" class="chat-form" autocomplete="off">
+    <input id="chatInput" type="text" placeholder="Сұрағыңызды жазыңыз..." maxlength="500" required>
+    <button id="chatSendBtn" type="submit" aria-label="Сұрақты жіберу">➤</button>
+  </form>
+</aside>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+# Секреттер мен жүйеден тыс файлдар
+.env
+.env.*
+!.env.example
+node_modules/
+*.log

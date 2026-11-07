@@ -1,0 +1,12 @@
+{
+  "name": "torly-qabyq-ai-site",
+  "version": "1.0.0",
+  "description": "«Қант диабеті кезіндегі торлы қабықтың нейрофизиологиялық өзгерістері» — бір беттік сайт және Gemini ЖИ-чат бот",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
